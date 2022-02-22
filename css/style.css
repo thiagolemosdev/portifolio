@@ -6,6 +6,10 @@
   --bg-techs: #cb92b1;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;
@@ -22,7 +26,7 @@ aside {
   margin-left: 40px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 div.perfil {
@@ -31,15 +35,16 @@ div.perfil {
   flex-direction: column;
   align-items: center;
   background: var(--bg-cards);
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 10px 0 10px 0;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 div.perfil img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border: 2px solid var(--secondary-text-color);
+  border: 2px solid #00ff00;
 }
 
 div.perfil h1 {
@@ -54,6 +59,74 @@ div.perfil p {
   color: var(--secondary-text-color);
   font-weight: 300;
   margin-top: 10px;
+}
+
+div.dados {
+  margin: 0;
+  background: var(--bg-cards);
+  border-radius: 20px;
+  padding: 10px 0px 10px 30px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+div.dados ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+div.dados a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 0.812em;
+}
+
+div.dados a img {
+  height: 24px;
+  width: 24px;
+}
+
+div.tecnologias {
+  margin: 0;
+  background: var(--bg-cards);
+  border-radius: 20px;
+  padding: 10px 0 10px 0;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px 30px 10px 30px;
+}
+
+div.tecnologias p {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+div.tecnologias ul {
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+div.tecnologias li {
+  flex-basis: 30%;
+  text-align: center;
+  color: #000;
+  /* padding: 0 5px 0 5px; */
+  background-color: #00ff00;
+  border-radius: 30px;
+
+  font-size: 0.625em;
 }
 
 main {
